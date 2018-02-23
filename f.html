@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>World Cup 2018</title>
+    <link href="f.css" rel="stylesheet" type="text/css">
+    <link href="g.css" rel="stylesheet" type="text/css">
+<style>
+		#container{margin:0 auto; max-width:600px;}
+		#display{max-width:100%;}
+		#thumbs{list-style: none; padding:0px; text-align: center;}
+		li{ display: inline-block;}
+		#thumbs img{
+			max-width:50px;
+			border:1px solid #f00;
+		}
+	</style>
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="logo">
+                <img src="t.png">
+            </div>ss
+            <ul class="main-nav">
+                <li class="active"><a href=""> HOME </a></li>
+                <li><a href=""> CONTACT </a></li>
+                <li><a href=""> TICKET </a></li>
+                <li><a href=""> ACCOUNT </a></li>
+            </ul>
+
+        </div>
+
+        <div class="hero">
+           <h1><span style="color: floralwhite">2018 Fifa World Cup</span></h1><br><br>
+            <div class="button">
+                <a href="t.html" class="btn btn-one">News Feed</a><br><br><br>
+                <a href="https://www.fifa-worldcup-game.com/wp-content/uploads/2017/12/1512271427_maxresdefault.jpg" class="btn btn-two">Fixture</a><br><br><br>
+                <a href="https://www.hrw.org/sites/default/files/styles/node_embed/public/multimedia_map_image/2017-06-russia-europeandcentralasia-map.jpg?itok=T3t5jCi3" class="btn btn-three">Venue</a><br><br><br>
+                <a href="https://www.viagogo.com/Sports-Tickets/Soccer-World-Cup-2018/Soccer-World-Cup-2018-Tickets?AffiliateID=49&adposition=1t3&PCID=PSUSGOOSPOFIFA848296358CA-000000&AdID=248475727579&MetroRegionID=&psc=&psc=&ps=&ps=&ps_p=0&ps_c=1050968290&ps_ag=58379322224&ps_tg=kwd-371934684185&ps_ad=248475727579&ps_adp=1t3&ps_fi=&ps_fi=&ps_li=&ps_li=&ps_lp=9004367&ps_n=g&ps_d=c&gclid=CjwKCAiAqvXTBRBuEiwAE54dcKfOEaq5bjHFGDNFJGe6GRW0yQ_ouZSWEhpApLm2_FawT1RLZj64ZRoCC8AQAvD_BwE" class="btn btn-four">Tickets</a><br><br><br>
+                <a href="https://www.fifa-worldcup-game.com/wp-content/uploads/2017/12/1512271427_maxresdefault.jpg" class="btn btn-two" class="btn btn-three">Teams</a><br><br><br>
+                <a href="https://www.youtube.com/user/FIFATV" class="btn btn-five">Explore More</a><br><br><br>
+                <a href="https://www.youtube.com/channel/UCIV9ckiaEULtN8FU4kOPlFw" class="btn btn-six">VIDEOS</a><br><br><br>
+                <a href="https://github.com/" class="btn btn-six">Login</a><br><br><br>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="container">
+		<img id="display" src="w.jpg">
+		<ul id="thumbs">
+			<li><img src="w.jpg"></li>
+			<li><img src="q.jpg"></li>
+			<li><img src="e.jpg"></li>
+		</ul>
+	</div>
+	<script>
+		//store thumbs in array
+		thumbs = (document.querySelectorAll("#thumbs img"));
+		//loop through the array of thumbs
+		for (i = 0; i < thumbs.length; ++i){
+			//bind a click event...
+			thumbs[i].onclick = function(){
+				//that will find the thumbnails image source
+				imgsrc = this.src;
+				//switch the directory from "thumb" to "full"
+				imgsrc = imgsrc.replace('thumb','full');
+				//now that our variable is calling the large version of the thumbnail assign it to the display
+				document.getElementById('display').src = imgsrc;
+				//Another way to build the same function. More complex and explicit
+				/*
+				imgsrc = imgsrc.split('/');
+				imgsrc = imgsrc[imgsrc.length-1];
+				document.getElementById('displayer').src = imgsrc;
+				*/
+			};
+		};
+	</script><br><br><br><br><br><br>
+        	<!--Footer
+------------------------------------------------------------------------------>
+        <span style="color: floralwhite">
+<footer id="footer">
+<div class="container">
+<div class="cols">
+<div class="col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="http://www.globalindustrial.com/help">Help</a></li>
+<li><a href="contact.php">Contact Us</a></li>
+<li><a href="aboutus.php">About Us</a></li>
+<li><a href="terms&conditons.php">Terms & Conditions</a></li>
+<li><a href="privacypolicy.php">Privacy Policy </a></li>
+</ul>
+</div>
+<div class="col media">
+<h3>STAY CONNECTED</h3>
+<ul class="social">
+<li><a href="https://www.facebook.com/tashi.namdyal"><span class="ico ico-fb"></span>Facebook</a></li>
+<li><a href="https://plus.google.com/u/0/100803005228134348683"><span class="ico ico-gp"></span>Google+</a></li>
+<li><a href="https://github.com/tashinamdyal"><span class="ico ico-pi"></span>Github</a></li>
+</ul>
+</div>
+<div class="col contact">
+<h3>Contact Me</h3>
+<!--	<p>Indrustial Safety Enterprise INC.<br>54233 Avenue Street<br>New York</p>-->
+<p><span class="ico ico-em"></span><a href="#">tashinamdyal@gmail.com</a></p>
+<p><span class="ico ico-ph"></span>(917) 470 1840</p>
+</div>
+<div class="col newsletter">
+<h3>Join our newsletter</h3>
+<p>Want to make this summer more intresting for the Bucket list you dreamt for in the best price</p>
+<form action="#">
+<input type="text" placeholder="Your email address..." style="width:60%">
+    <button type="submit" class="btn"><span style="color: darkgreen">Submit</span></button>
+</form>
+</div>
+</div>
+<p class="copy">Copyright 2018 Tashi Namdyal. All rights reserved.</p>
+</div>
+<!-- / container -->
+</footer>
+            </span>
+<!-- / footer -->
+    </header>
+
+</body>
+    </html>
